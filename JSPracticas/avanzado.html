@@ -1,0 +1,44 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<title> Test JS Practicas</title>
+	<script type="text/javascript">
+    function testDom()
+    {
+     //document.write("Imprimir");
+	    var obj = document.getElementById("parr");
+	    //alert(obj);
+	    obj.innerHTML = "Esto es un parrago diferente";
+
+	    document.getElementById("p").value=document.getElementById("p").value+5;
+    }
+
+    function getLink(){
+    	//alert(1);
+     	var l = document.links;
+        //alert(l);
+        document.getElementById("result").innerHTML=l.miLink.href;
+        //alert(l.miLink.href);
+        document.getElementById("p").value=document.getElementById("p").value-5;
+     }
+
+	</script>
+</head>
+<body>
+	<div id="cont">
+		<p id="parr"> Est es un parrafo </p>
+	</div>
+	<input type="button" onClick="testDom();" value="test!!" />
+	<p > 
+		<a id="miLink" href="http://www.bancopatagonia.com">
+			Banco Patagonia 
+		</a>
+	</p>
+	<p id="result"></p>
+
+	<input type="button" onClick="getLink();" value="myLink!!" />
+
+<p>Progresion de la tarea: <progress id="p" value="40" max="100">10%</progress></p>
+
+</body>
+</html>

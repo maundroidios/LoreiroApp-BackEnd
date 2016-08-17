@@ -1,0 +1,34 @@
+
+JS Phonegap Instructivo:
+
+Comandos oara instalar Phonegap.
+
+
+$sudo npm install -g phonegap
+
+$cordova create  [ID] [NAME] 
+
+$cordova platform add ios android
+
+$cordova build
+
+$cordova emulate
+
+
+===========
+Si hay problemas con el folder node_modules
+
+estos comandos solucionaran los inconvenientes
+
+$ sudo npm remove -g yo phonegap
+$ npm cache clean
+$ sudo npm install -g phonegap@latest
+
+===========
+
+Login via Facebook
+
+1713797278880537
+
+Loreiroapp
+
